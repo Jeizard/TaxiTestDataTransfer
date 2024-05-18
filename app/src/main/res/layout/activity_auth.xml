@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AuthActivity">
+
+    <TextView
+        android:id="@+id/telNumberTextView"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="80dp"
+        android:gravity="start|center_vertical"
+        android:paddingStart="30dp"
+        android:text="Telephone number"
+        android:textColor="#303030"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/telNumberEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/telNumberEditText"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:text="+375"
+        android:maxLength="17"
+        android:textColor="#303030"
+        android:textColorHint="#BF303030"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/telNumberTextView"
+        app:layout_constraintTop_toTopOf="@+id/telNumberTextView" />
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="30dp"
+        android:gravity="start|center_vertical"
+        android:paddingStart="30dp"
+        android:text="Name"
+        android:textColor="#303030"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/telNumberEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/telNumberTextView" />
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#303030"
+        android:textColorHint="#BF303030"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nameTextView"
+        app:layout_constraintTop_toTopOf="@+id/nameTextView" />
+
+    <TextView
+        android:id="@+id/surnameTextView"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="30dp"
+        android:gravity="start|center_vertical"
+        android:paddingStart="30dp"
+        android:text="Surname"
+        android:textColor="#303030"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/telNumberEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameTextView" />
+
+    <EditText
+        android:id="@+id/surnameEditText"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#303030"
+        android:textColorHint="#BF303030"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/surnameTextView"
+        app:layout_constraintTop_toTopOf="@+id/surnameTextView" />
+
+    <Button
+        android:id="@+id/authButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="@color/black"
+        app:cornerRadius="10dp"
+        android:text="REGISTRATION"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/surnameTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

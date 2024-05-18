@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PathActivity">
+
+    <TextView
+        android:id="@+id/pointFromTextView"
+        android:layout_width="100dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Point From"
+        android:textColor="#303030"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/streetFromTextView"
+        android:layout_width="100dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="10dp"
+        android:gravity="start|center_vertical"
+        android:paddingStart="30dp"
+        android:text="Street"
+        android:textColor="#303030"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/streetFromEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pointFromTextView" />
+
+    <EditText
+        android:id="@+id/streetFromEditText"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="#303030"
+        android:textColorHint="#BF303030"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/streetFromTextView"
+        app:layout_constraintTop_toTopOf="@+id/streetFromTextView" />
+
+    <TextView
+        android:id="@+id/houseFromTextView"
+        android:layout_width="100dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:gravity="start|center_vertical"
+        android:paddingStart="30dp"
+        android:text="House"
+        android:textColor="#303030"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/houseFromEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/streetFromTextView" />
+
+    <EditText
+        android:id="@+id/houseFromEditText"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="#303030"
+        android:textColorHint="#BF303030"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/houseFromTextView"
+        app:layout_constraintTop_toTopOf="@+id/houseFromTextView" />
+
+    <TextView
+        android:id="@+id/flatFromTextView"
+        android:layout_width="100dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:gravity="start|center_vertical"
+        android:paddingStart="30dp"
+        android:text="Flat"
+        android:textColor="#303030"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/flatFromEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/houseFromTextView" />
+
+    <EditText
+        android:id="@+id/flatFromEditText"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="#303030"
+        android:textColorHint="#BF303030"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/flatFromTextView"
+        app:layout_constraintTop_toTopOf="@+id/flatFromTextView" />
+
+    <TextView
+        android:id="@+id/pointToTextView"
+        android:layout_width="100dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="Point To"
+        android:textColor="#303030"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flatFromTextView" />
+
+    <TextView
+        android:id="@+id/streetToTextView"
+        android:layout_width="100dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="10dp"
+        android:gravity="start|center_vertical"
+        android:paddingStart="30dp"
+        android:text="Street"
+        android:textColor="#303030"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/streetToEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pointToTextView" />
+
+    <EditText
+        android:id="@+id/streetToEditText"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="#303030"
+        android:textColorHint="#BF303030"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/streetToTextView"
+        app:layout_constraintTop_toTopOf="@+id/streetToTextView" />
+
+    <TextView
+        android:id="@+id/houseToTextView"
+        android:layout_width="100dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:gravity="start|center_vertical"
+        android:paddingStart="30dp"
+        android:text="House"
+        android:textColor="#303030"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/houseToEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/streetToTextView" />
+
+    <EditText
+        android:id="@+id/houseToEditText"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="#303030"
+        android:textColorHint="#BF303030"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/houseToTextView"
+        app:layout_constraintTop_toTopOf="@+id/houseToTextView" />
+
+    <TextView
+        android:id="@+id/flatToTextView"
+        android:layout_width="100dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:gravity="start|center_vertical"
+        android:paddingStart="30dp"
+        android:text="Flat"
+        android:textColor="#303030"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/flatToEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/houseToTextView" />
+
+    <EditText
+        android:id="@+id/flatToEditText"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="#303030"
+        android:textColorHint="#BF303030"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/flatToTextView"
+        app:layout_constraintTop_toTopOf="@+id/flatToTextView" />
+
+    <Button
+        android:id="@+id/okButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="@color/black"
+        android:text="OK"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flatToTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

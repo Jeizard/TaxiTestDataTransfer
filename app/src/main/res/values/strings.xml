@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Taxi (Test data transfer between Activities)</string>
+    <string-array name="route_options">
+        <item>My Location</item>
+        <item>Map Point</item>
+    </string-array>
 </resources>
